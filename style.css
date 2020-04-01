@@ -1,0 +1,150 @@
+body {
+	background: url(background.jpg) no-repeat center center fixed;
+  	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.main {
+	background-color: white;
+	margin-top: 28px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1150px;
+	height: 815px;
+}
+
+.top {
+	padding-top: 70px;
+	padding-right: 100px;
+	padding-bottom: 15px;
+	padding-left: 100px;
+}
+
+.top-comtent {
+	display: inline;
+}
+
+.logo {
+	width: 350px;
+}
+
+.logocomment {
+	margin-top: 5px
+}
+
+.title {
+	color: #01b4dc;
+	margin-bottom: 70px;	
+}
+
+.linkk {
+	width: 350px;
+	display: flex;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+	margin-top: 20px;
+}
+
+.imglink {
+	width: 90px;
+	height: 90px;
+	padding-right: 30px;
+	margin-top: -15px;
+}
+
+
+.start {
+	width: 190px;
+	height: 70px;
+	float: right;
+	border-radius: 8px;
+	margin-right: 20px;
+	margin-top: -220px;
+	background-color: black;
+	color: white;
+}
+
+.start:hover {
+		background-color: #018aa9;
+}
+
+hr {
+	border: 1px dashed grey
+}
+
+.mid {
+	padding-top: 70px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	padding-left: 100px;
+	margin-top: -50px;
+}
+
+.linkstem {
+	text-decoration: none;
+	color: black;
+}
+
+.bottom {
+	background-color: #01B4DC;
+	margin-top: -50px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	width: 1150px;
+	height: 480px;
+}
+
+.bottomcontent {
+	padding-top: 70px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	padding-left: 100px;
+}
+
+.partijentitle {
+	color: white;
+}
+
+.partij:hover {
+    transform: scale(2);
+    transition-duration: 0.5s;
+}
+
+.partij {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.partijlogo {
+	max-width: 50px;
+	max-height: 50px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.footerimgl {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 150px;
+	height: 25px;
+}
+
+.footerimglr {
+	float: right;
+	width: 100px;
+	height: 20px;
+	margin-top: 30px;
+}
+
+.footerimgr {
+	float: right;
+	margin-top: 30px;
+	margin-left: 15px;
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<title>match answers</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<button id="match" >Match</button>
+</body>
+<script>
+	mates = [
+		{name: 'Arnold'},
+		{name: 'Bob'},
+		{name: 'Charles'},
+		{name: 'John'}
+	];
+
+	meals = [
+		{	name: 'friet',
+			mates: [
+				{name: 'Arnold', answer: 'ok'},
+				{name: 'Bob', answer: 'love-it'},
+				{name: 'Charles', answer: 'love-it'},
+				{name: 'John', answer: 'hate-it'}
+			]},
+		{	name: 'pizza',
+			mates: [
+				{name: 'Arnold', answer: 'love-it'},
+				{name: 'Bob', answer: 'ok'},
+				{name: 'Charles', answer: 'love-it'},
+				{name: 'John', answer: 'ok'}
+			]},
+		{	name: 'curry',
+			mates: [
+				{name: 'Arnold', answer: 'love-it'},
+				{name: 'Bob', answer: 'hate-it'},
+				{name: 'Charles', answer: 'hate-it'},
+				{name: 'John', answer: 'ok'}
+			]},
+		{	name: 'stamppot',
+			mates: [
+				{name: 'Arnold', answer: 'love-it'},
+				{name: 'Bob', answer: 'ok'},
+				{name: 'Charles', answer: 'love-it'},
+				{name: 'John', answer: 'love-it'}
+			]},
+	];
+// answers corresponding with meals (i like or not)
+answers = [
+	'ok','love-it','love-it','hate-it'
+]
+
+function matchMealMate (){
+	// add property 'score'  for mates and set to zero
+for (let mateIdx in mates){
+    mates[mateIdx].score = 0;
+    // console.log(mates[mateIdx]);
+}
+
+// Iterate through answers and corresponding meals
+for (let answerIdx in answers){
+
+    console.log('show mates of meals element '+answerIdx);
+    console.dir(meals[answerIdx]);
+
+// per meal iterate through its mates
+for (let mateIdx in meals[answerIdx].mates){
+ //    console.log('show mate : '+mateIdx);
+	// console.dir(meals[answerIdx].mates[mateIdx]);
+
+    // if ansers[answerIdx] is equal to meals[answerIdx mates[mateIdx].answer
+    if (answers[answerIdx] === meals[answerIdx].mates[mateIdx].answer){
+
+    console.log('answers equal ' + answers[answerIdx]);
+    
+	// function findMate(mate){
+	// 	return mate.name = term
+	// }
+	// var term = meals[answerIdx].mates[mateIdx].name;
+	// var foundmate = mates.find(findMate)
+
+	var foundmate = mates.find(function(mate){
+		return meals[answerIdx].mates[mateIdx].name === mate.name;
+	});
+	
+	console.dir(foundmate);
+
+   	// mates[mateIdx].score++;
+
+	// find corresponding element in mates en increment its score
+
+    }
+
+}
+}
+
+	// sort mates on score
+}
+
+// call the match function
+matchMealMate();
+
+// console the resulting list of mates
+//console.dir(mates);
+
+console.dir(mates);
+
+
+
+</script>
+</html>		

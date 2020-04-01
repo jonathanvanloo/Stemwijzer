@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="CSS/Stemwijzer.css">
+<head>
+	<title>Challenge Front-End (Stemwijzer)</title>
+</head>
+<body>
+	<div class="main">
+		<div class="vragen">
+			<div class="backbutton">
+				<button></button>
+			</div>
+			<div class="stemwijzer">
+				<h1 class="title"></h1>
+				<p class="statement"></p>
+			</div>
+			<div class="buttons">
+				<button class="button-eens" id="vragenbuttons">Eens</button>
+				<button class="button-geen" id="vragenbuttons">Geen van Beide</button>
+				<button class="button-oneens" id="vragenbuttons">Oneens</button>
+				<button class="overslaan">Sla deze vraag over</button>
+			</div>
+			<details class="meningen">
+				<summary class="meningentitel">Wat vinden de partijen?</summary>
+				<div class="meningenmain">
+					<div class="meningeens" id="meningpartij">
+						<h3 class="mening-subtitle">Eens</h3>
+					</div>
+					<div class="meninggeen" id="meningpartij">
+						<h3 class="mening-subtitle">Geen van Beide</h3>
+					</div>
+					<div class="meningoneens" id="meningpartij">
+						<h3 class="mening-subtitle">Oneens</h3>
+
+					</div>
+				</div>
+			</details>
+		</div>
+	</div>
+</body>
+<script src="http://stemwijzer.dvc-icta.nl/data.js"></script>
+<script src="js/Stemwijzer.js" type="text/javascript"></script>
+</html>
